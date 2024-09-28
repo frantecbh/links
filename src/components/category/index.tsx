@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pressable, PressableProps Text, View } from 'react-native';
+import { Pressable, PressableProps, Text, View } from 'react-native';
 
 import { styles } from './styles';
 import { MaterialIcons } from '@expo/vector-icons';
