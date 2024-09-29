@@ -7,11 +7,11 @@ import { colors } from '@/styles/colors';
 
 type CategoriesProps = PressableProps & {
   name: string
-  isSelected: Boolean
+  isSelected?: Boolean
   icon: keyof typeof MaterialIcons.glyphMap
 }
 
-export function Category({name, icon, isSelected, ...rest}: CategoriesProps) {
+export function Category({name, icon, isSelected = false, ...rest}: CategoriesProps) {
 
   const color = isSelected ? colors.green[300] : colors.gray[400]
 
