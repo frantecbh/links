@@ -5,6 +5,7 @@ import { styles } from './styles'
 import { colors } from '@/styles/colors'
 import { Catetories } from '@/components/catetories'
 import { Link } from '@/components/link'
+import { Option } from '@/components/option'
 
 
 
@@ -46,6 +47,10 @@ export default function Index() {
                         <Text style={styles.modalUrl}>
                             https://frantecit.com.br
                         </Text>
+                        <View style={styles.modalFooter}>
+                            <Option name='Abrir' icon='language' />
+                            <Option name='Excluir' icon='delete' variant='secondary' />                            
+                        </View>
                     </View>
                 </View>
           </Modal>
