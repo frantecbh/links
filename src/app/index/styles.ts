@@ -20,8 +20,14 @@ export const styles = StyleSheet.create({
         width: 38
     },
 
-    title:{ 
-      color: colors.green[900],  
-      fontSize: 22
+ 
+    links: {
+      borderTopWidth: 1,
+      borderTopColor: colors.gray[600]
+    },
+    linksContent: {
+      gap: 20,
+      padding: 24,
+      paddingBottom: 100
     }
 });
