@@ -1,27 +1,24 @@
 import { colors } from "@/styles/colors";
 import { StyleSheet } from "react-native";
-
-
-
 export const styles = StyleSheet.create({
-  container:{
+  container: {
     flex: 1,
-    padding:62
+    paddingTop: 62,
   },
-  header:{
+  header: {
     flexDirection: "row",
     justifyContent: "space-between",
     paddingHorizontal: 24,
-    marginBottom: 24
+    marginBottom: 24,
   },
-  title:{
+  title: {
     color: colors.gray[200],
     fontSize: 24,
-    fontWeight: "600"
+    fontWeight: "600",
   },
-  label:{
+  label: {
     color: colors.gray[400],
     fontSize: 14,
-    paddingHorizontal: 24
+    paddingHorizontal: 24,
   }
 })
