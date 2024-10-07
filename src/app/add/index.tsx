@@ -1,5 +1,5 @@
 import {  Text, TouchableOpacity, View } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import { styles } from './styles'
 import { MaterialIcons } from '@expo/vector-icons'
 import { colors } from '@/styles/colors'
@@ -9,6 +9,16 @@ import { Input } from '@/components/input'
 import { Button } from '@/components/button'
 
 export default function Add() {
+  const [name, setName] = useState('')
+  const [url, setUrl] = useState('')
+
+  const handleAdd = () => {
+    console.log({
+      name,
+      url
+    })
+  }
+
   return (
     <View style={styles.container}>
         <View style={styles.header}>
@@ -20,10 +30,11 @@ export default function Add() {
         <Text style={styles.label}>Selecione uma categoria</Text>
         <Catetories />
         <View style={styles.form}>
-           <Input placeholder='Nome' />
-           <Input placeholder='URL' />
-           <Button title='Adicionar' />
+           <Input placeholder='Nome' onChangeText={setName} autoCorrect={false} />
+           <Input placeholder='URL' onChangeText={setUrl} autoCorrect={false} />
+           <Button title='Adicionar' onPress={handleAdd} />
         </View>
+       
     </View>
   )
 }
